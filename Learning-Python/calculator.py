@@ -8,13 +8,13 @@ print("4. Opearion Divide\n")
 
 operation = input("Enter the operation number: ")
 
-if operation == 1:
+if operation == '1':
     print(num1 + num2)
-elif operation == 2:
+elif operation == '2':
     print(num1 - num2)
-elif operation == 3:
+elif operation == '3':
     print(num1 * num2)
-elif operation == 4:
+elif operation == '4':
     print(num1 / num2)
 else:
     print("\nOperation number is not valid!\n")
