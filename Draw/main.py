@@ -15,10 +15,5 @@ for _ in range(72):
     painter.circle(100, 360)
     painter.right(5)
 
-
-
-
-
-
 screen = Screen()
 screen.exitonclick()
