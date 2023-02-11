@@ -138,7 +138,7 @@ def primMST(N, primGraph):
             # graph[u][v] is non zero only for adjacent vertices of m
             # mstSet[v] is false for vertices not yet included in MST
             # Update the key only if graph[u][v] is smaller than key[v]
-            if (primGraph[u][v] > 0 and mstSet[v] == False and key[v] > primGraph[u][v]):
+            if primGraph[u][v] > 0 and mstSet[v] == False and key[v] > primGraph[u][v]:
                 key[v] = primGraph[u][v]
                 parent[v] = u
 
@@ -146,25 +146,3 @@ def primMST(N, primGraph):
 
 
 main()
-
-"""
-
-10
-15
-1 2 5
-1 8 10
-1 6 6
-2 3 4
-2 6 1
-5 0 11
-5 7 3
-5 3 1
-6 7 2
-6 5 7
-7 1 9
-8 5 5
-8 0 4
-9 5 2
-4 9 1
-
-"""
